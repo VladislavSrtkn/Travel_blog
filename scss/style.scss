@@ -1,0 +1,60 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+@mixin imagecontainer {
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-clip: content-box;
+}
+
+$customcolor1: #ff9500;
+
+$light: $customcolor1;
+$primary: $customcolor1;
+
+@import "../bootstrap-5.2.0-beta1/scss/bootstrap.scss";
+
+// Then add additional custom code here
+
+.banner {
+  min-height: 500px;
+  background-image: url(../images/pejzazh-priroda-43292.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.banner_info {
+  background-color: transparentize($color: #fbfbfb, $amount: 0.8);
+}
+
+.carpic {
+  max-height: 400px;
+}
+
+.carousel-item {
+  max-height: 400px;
+}
+
+.food_container1 {
+  @include imagecontainer();
+  background-image: url(../images/food1.jpg);
+}
+.food_container2 {
+  @include imagecontainer();
+  background-image: url(../images/food2.jpg);
+}
+
+.custom_border {
+  border-bottom: 1px solid $customcolor1;
+  border-top: 1px solid $customcolor1;
+}
+
+h2 {
+  color: $customcolor1;
+}
+
+a:focus {
+  outline: 3px solid $customcolor1;
+}
