@@ -12496,4 +12496,8 @@ h2, .h2 {
 a:focus {
   outline: 3px solid #ff9500;
 }
+
+.wip {
+  min-height: 70vh;
+}
 /*# sourceMappingURL=style.css.map */
