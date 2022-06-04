@@ -12461,10 +12461,7 @@ fieldset:disabled .btn {
   background-color: rgba(251, 251, 251, 0.2);
 }
 
-.carpic {
-  max-height: 400px;
-}
-
+.mh400,
 .carousel-item {
   max-height: 400px;
 }
@@ -12499,5 +12496,10 @@ a:focus {
 
 .wip {
   min-height: 70vh;
+}
+
+.custbox {
+  background-color: #ff9500;
+  color: #fbfbfb;
 }
 /*# sourceMappingURL=style.css.map */
