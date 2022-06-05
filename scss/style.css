@@ -12452,8 +12452,8 @@ fieldset:disabled .btn {
 
 .banner {
   min-height: 500px;
-  background-image: url(../images/pejzazh-priroda-43292.jpg);
   background-size: cover;
+  background-image: url(../images/pejzazh-priroda-43292.jpg);
   background-position: top;
 }
 
@@ -12501,5 +12501,42 @@ a:focus {
 .custbox {
   background-color: #ff9500;
   color: #fbfbfb;
+}
+
+.banner_thai {
+  min-height: 500px;
+  background-size: cover;
+  background-image: url(../images/Thailand/thai_banner.jpeg);
+  background-position: bottom;
+}
+
+.nav_list {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#comment_input {
+  border: 1px solid #ff9500;
+  width: 70%;
+  outline-color: #ff9500;
+}
+
+.comment_box {
+  border: 1px solid #ff9500;
+  padding: 20px;
+}
+
+.comment_avatar {
+  max-width: 90px;
+  border-radius: 50%;
+}
+
+.username {
+  max-width: 200px;
 }
 /*# sourceMappingURL=style.css.map */

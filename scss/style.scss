@@ -13,6 +13,15 @@
   max-height: 400px;
 }
 
+@mixin banner {
+  min-height: 500px;
+  background-size: cover;
+}
+
+@mixin custom_border {
+  border: 1px solid $customcolor1;
+}
+
 $customcolor1: #ff9500;
 
 $light: $customcolor1;
@@ -23,9 +32,8 @@ $primary: $customcolor1;
 // Then add additional custom code here
 
 .banner {
-  min-height: 500px;
+  @include banner();
   background-image: url(../images/pejzazh-priroda-43292.jpg);
-  background-size: cover;
   background-position: top;
 }
 
@@ -66,4 +74,39 @@ a:focus {
 .custbox {
   background-color: $customcolor1;
   color: #fbfbfb;
+}
+
+.banner_thai {
+  @include banner();
+  background-image: url(../images/Thailand/thai_banner.jpeg);
+  background-position: bottom;
+}
+
+.nav_list {
+  position: sticky;
+  top: 50px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#comment_input {
+  @include custom_border();
+  width: 70%;
+  outline-color: $customcolor1;
+}
+
+.comment_box {
+  @include custom_border();
+  padding: 20px;
+}
+
+.comment_avatar {
+  max-width: 90px;
+  border-radius: 50%;
+}
+
+.username {
+  max-width: 200px;
 }
