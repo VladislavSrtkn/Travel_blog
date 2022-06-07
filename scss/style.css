@@ -12450,6 +12450,10 @@ fieldset:disabled .btn {
   }
 }
 
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 .banner {
   min-height: 500px;
   background-size: cover;
@@ -12471,6 +12475,7 @@ fieldset:disabled .btn {
   background-size: cover;
   background-position: center;
   background-clip: content-box;
+  border-radius: 2rem;
   background-image: url(../images/food1.jpg);
 }
 
@@ -12479,11 +12484,12 @@ fieldset:disabled .btn {
   background-size: cover;
   background-position: center;
   background-clip: content-box;
+  border-radius: 2rem;
   background-image: url(../images/food2.jpg);
 }
 
-.custom_border {
-  border-bottom: 1px solid #ff9500;
+.btn-primary {
+  --bs-btn-color: var(--bs-white);
 }
 
 h2, .h2 {
@@ -12495,7 +12501,7 @@ a:focus {
 }
 
 .wip {
-  min-height: 70vh;
+  min-height: 45vh;
 }
 
 .custbox {
@@ -12521,7 +12527,6 @@ ul {
 }
 
 #comment_input {
-  border: 1px solid #ff9500;
   width: 70%;
   outline-color: #ff9500;
 }
@@ -12538,5 +12543,13 @@ ul {
 
 .username {
   max-width: 200px;
+}
+
+footer {
+  border-top: 1px solid #ff9500;
+}
+
+.carousel-inner {
+  border-radius: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

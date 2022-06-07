@@ -7,6 +7,7 @@
   background-size: cover;
   background-position: center;
   background-clip: content-box;
+  border-radius: $border-radius-2xl;
 }
 
 @mixin mh400 {
@@ -23,13 +24,16 @@
 }
 
 $customcolor1: #ff9500;
-
 $light: $customcolor1;
 $primary: $customcolor1;
 
 @import "../bootstrap-5.2.0-beta1/scss/bootstrap.scss";
 
 // Then add additional custom code here
+
+* {
+  font-family: "Roboto", sans-serif;
+}
 
 .banner {
   @include banner();
@@ -55,8 +59,8 @@ $primary: $customcolor1;
   background-image: url(../images/food2.jpg);
 }
 
-.custom_border {
-  border-bottom: 1px solid $customcolor1;
+.btn-primary {
+  --bs-btn-color: var(--bs-white);
 }
 
 h2 {
@@ -68,7 +72,7 @@ a:focus {
 }
 
 .wip {
-  min-height: 70vh;
+  min-height: 45vh;
 }
 
 .custbox {
@@ -92,7 +96,6 @@ ul {
 }
 
 #comment_input {
-  @include custom_border();
   width: 70%;
   outline-color: $customcolor1;
 }
@@ -109,4 +112,12 @@ ul {
 
 .username {
   max-width: 200px;
+}
+
+footer {
+  border-top: 1px solid $customcolor1;
+}
+
+.carousel-inner {
+  border-radius: $border-radius-xl;
 }
