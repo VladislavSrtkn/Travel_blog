@@ -114,7 +114,7 @@ footer {
   border-radius: $border-radius-xl;
 }
 
-.test {
-  background-color: transparentize($color: $customcolor1, $amount: 0.95);
+.custom-box {
+  background-color: transparentize($color: $customcolor2, $amount: 0.97);
   border-radius: $border-radius-xl;
 }
