@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Blog Example</title>
     <link rel="stylesheet" href="./fontello-94c077ac/css/fontello.css" />
-    <link rel="stylesheet" href="./scss/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./scss/style.css" />
   </head>
   <body>
     <!-- Navigation -->
@@ -45,7 +45,7 @@
     <section class="container-fluid">
       <div class="row">
         <div class="banner d-flex align-items-center">
-          <div class="col-md-6 ps-4 banner_info">
+          <div class="col-md-6 ps-4 banner-info">
             <h1>My Travel Blog</h1>
             <p>
               Hi! I'm Vladislav - travel photographer, food-blogger and begginer
@@ -62,12 +62,12 @@
 
     <!-- Polular Posts -->
     <section class="container">
-      <h2 class="text-center py-5 mb-5 rounded shadow-sm">Most Popular Post</h2>
-      <div class="row custom_border">
+      <h2 class="text-center py-5 mb-5 rounded shadow-lg">Most Popular Post</h2>
+      <div class="row test">
         <div
           class="col-md-6 d-flex flex-column align-items-center justify-content-center"
         >
-          <h2>Thailand</h2>
+          <h2 class="pt-3">Thailand</h2>
           <p>
             <strong
               >One of my longest trips! A month in the Kingdom of Thailand:
@@ -83,7 +83,7 @@
             <span class="icon-heart">5299</span>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 px-0">
           <!-- Carousel -->
           <div
             id="carouselExampleIndicators"
@@ -166,8 +166,8 @@
 
     <!-- Recent posts -->
     <section class="container">
-      <div class="row text-center align-items-end">
-        <h2 class="py-5 my-5 rounded shadow-sm">Recent posts</h2>
+      <h2 class="py-5 my-5 text-center rounded shadow-lg">Recent posts</h2>
+      <div class="row text-center align-items-end test">
         <div class="col-lg-4 pt-3">
           <h3>Singapour</h3>
           <p>Amazing laser show</p>
@@ -211,32 +211,32 @@
 
     <!-- Food -->
     <section class="container">
-      <h2 class="py-5 my-5 text-center shadow-sm rounded">
+      <h2 class="py-5 my-5 text-center shadow-lg rounded">
         Food travel guides
       </h2>
       <div class="row">
-        <div
-          class="col-md-6 pb-3 d-flex flex-column justify-content-end food_container1"
-        >
-          <div class="ps-4">
-            <a href="./wip.html" class="text-decoration-none"
-              ><h3 class="text-white">Spain</h3></a
-            >
-            <p class="text-white">
-              How long does it take to eat a whole paella?
-            </p>
+        <a href="./wip.html" class="col-md-6">
+          <div
+            class="pb-3 d-flex flex-column justify-content-end food-container1"
+          >
+            <div class="ps-4">
+              <h3 class="text-white">Spain</h3>
+              <p class="text-white">
+                How long does it take to eat a whole paella?
+              </p>
+            </div>
           </div>
-        </div>
-        <div
-          class="col-md-6 pb-3 d-flex flex-column justify-content-end food_container2"
-        >
-          <div class="ps-4">
-            <a href="./wip.html" class="text-decoration-none"
-              ><h3 class="text-white">Dubai</h3></a
-            >
-            <p class="text-white">Best burgers ever?</p>
+        </a>
+        <a href="./wip.html" class="col-md-6">
+          <div
+            class="pb-3 d-flex flex-column justify-content-end food-container2"
+          >
+            <div class="ps-4">
+              <h3 class="text-white">Dubai</h3>
+              <p class="text-white">Best burgers ever?</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </section>
 
@@ -268,7 +268,7 @@
           </ul>
         </div>
 
-        <div class="col-md-5 offset-md-1">
+        <div class="col-md-5 offset-md-1 mt-3 mt-md-0">
           <form>
             <h5>Subscribe to our newsletter</h5>
             <p>Monthly digest of what's new and exciting from us.</p>

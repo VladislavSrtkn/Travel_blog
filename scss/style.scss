@@ -19,20 +19,25 @@
   background-size: cover;
 }
 
-@mixin custom_border {
+@mixin custom-border {
   border: 1px solid $customcolor1;
 }
 
-$customcolor1: #ff9500;
-$light: $customcolor1;
-$primary: $customcolor1;
+$customcolor1: #05716c;
+$customcolor2: #1978a5;
 
-@import "../bootstrap-5.2.0-beta1/scss/bootstrap.scss";
+$light: $customcolor2;
+$primary: $customcolor2;
+
+@import '../bootstrap-5.2.0-beta1/scss/bootstrap.scss';
 
 // Then add additional custom code here
 
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  a {
+    text-decoration: none;
+  }
 }
 
 .banner {
@@ -41,7 +46,7 @@ $primary: $customcolor1;
   background-position: top;
 }
 
-.banner_info {
+.banner-info {
   background-color: transparentize($color: #fbfbfb, $amount: 0.8);
 }
 
@@ -50,11 +55,11 @@ $primary: $customcolor1;
   @include mh400();
 }
 
-.food_container1 {
+.food-container1 {
   @include imagecontainer();
   background-image: url(../images/food1.jpg);
 }
-.food_container2 {
+.food-container2 {
   @include imagecontainer();
   background-image: url(../images/food2.jpg);
 }
@@ -68,25 +73,20 @@ h2 {
 }
 
 a:focus {
-  outline: 3px solid $customcolor1;
+  outline: none;
 }
 
 .wip {
   min-height: 45vh;
 }
 
-.custbox {
-  background-color: $customcolor1;
-  color: #fbfbfb;
-}
-
-.banner_thai {
+.banner-thai {
   @include banner();
   background-image: url(../images/Thailand/thai_banner.jpeg);
   background-position: bottom;
 }
 
-.nav_list {
+.nav-list {
   position: sticky;
   top: 50px;
 }
@@ -95,29 +95,26 @@ ul {
   list-style-type: none;
 }
 
-#comment_input {
-  width: 70%;
-  outline-color: $customcolor1;
-}
-
-.comment_box {
-  @include custom_border();
+.comment-box {
+  @include custom-border();
   padding: 20px;
-}
 
-.comment_avatar {
-  max-width: 90px;
-  border-radius: 50%;
-}
-
-.username {
-  max-width: 200px;
+  .comment-avatar {
+    max-width: 90px;
+    border-radius: 50%;
+  }
 }
 
 footer {
   border-top: 1px solid $customcolor1;
+  background-color: transparentize($color: $customcolor1, $amount: 0.95);
 }
 
 .carousel-inner {
+  border-radius: $border-radius-xl;
+}
+
+.test {
+  background-color: transparentize($color: $customcolor1, $amount: 0.95);
   border-radius: $border-radius-xl;
 }
