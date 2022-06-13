@@ -29,7 +29,7 @@ $customcolor2: #1978a5;
 $light: $customcolor2;
 $primary: $customcolor2;
 
-@import '../bootstrap-5.2.0-beta1/scss/bootstrap.scss';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
 
 // Then add additional custom code here
 
